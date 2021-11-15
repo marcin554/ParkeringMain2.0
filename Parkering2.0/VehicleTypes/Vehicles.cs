@@ -9,7 +9,7 @@ namespace Parkering2._0
     internal class Vehicles
     {
         //RegNummer
-        //Time
+        //Time DataTime time_Now = DataTime.Now;
         //Price
         //Size
        
