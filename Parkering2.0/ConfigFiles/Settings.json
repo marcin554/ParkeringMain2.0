@@ -7,18 +7,6 @@
     "**/obj",
     "**/platforms"
   ],
-  "SizeParkingSlots": 100,
-  "CurrentMaxTaken": 100,
-  "SizeParkingSlot": 4,
-
-  "McSize": 2,
-  "CarSize": 4,
-
-
-  "McPrice": 10,
-  "CarPrice": 20,
-
-  "FirstFreeMin": 10 
 
 
 

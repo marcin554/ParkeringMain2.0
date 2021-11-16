@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace Parkering2._0
 {
-    internal class ParkingSpot
+    internal class ParkingSpot:ParkingHouse
     {
-        //size of the slot
+
+        public int sizeSpot = 4;
+        public int numberSpotId;
+        public ParkingSpot()
+        {
+            numberSpotId = 0;
+            sizeSpot = 4;
+        }
+
+       // Avaible Size
+            //Spot Number
+
         
     }
 }

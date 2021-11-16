@@ -8,18 +8,20 @@ namespace Parkering2._0
 {
     public class Vehicles
     {
-        public int RegNummer { get; set; }
+        public string RegNummer { get; set; }
         public int Price { get; set; }
         public DateTime Time { get; set; }
-        public int size { get; set; }
+        public int Size { get; set; }
 
         
-        public void CreateVehicle(int RegNmr)
-        {
-            RegNummer = RegNmr;
-            Console.WriteLine(RegNmr);
+        //public void CreateVehicle(string RegNmr)
+        //{
+        //    RegNummer = RegNmr;
+            
 
-        }
+        //}
+
+
         
        
       

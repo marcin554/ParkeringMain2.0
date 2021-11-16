@@ -20,7 +20,10 @@ namespace Parkering2._0.ConfigFiles
 
         public int FirstFreeMin;
 
-        
+        public string SettingsPath = @"../../../ConfigFiles/Settings.json";
+        public string ParkedVehicles = @"../../../ConfigFiles/Vehicles.json";
+
+
 
 
     }

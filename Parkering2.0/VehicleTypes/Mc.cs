@@ -8,11 +8,17 @@ namespace Parkering2._0
 {
     public class Mc : Vehicles
     {
-        public Mc()
+        
+        
+            public Mc()
         {
-
+            Price = 5;
+            Size = 5;
         }
-       
+
+        
+      
+
 
     }
 }

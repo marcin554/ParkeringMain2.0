@@ -8,11 +8,12 @@ namespace Parkering2._0
 {
     public class ParkingHouse
     {
+
         //amount of spots
         //taken/free slots
         //show places
         //
 
-        
+        public 
     }
 }

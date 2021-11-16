@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace Parkering2._0
 {
-    internal class Car:Vehicles
+    internal class Car : Vehicles
     {
-        //size
-        //price
+        public string d;
+        public Car()
+        {
+            Size = 5;
+            Price = 5;
+            
+        
+        }
+
+        
+ 
     }
 }
