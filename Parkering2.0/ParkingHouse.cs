@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Parkering2._0
 {
-    internal class ParkingHouse
+    public class ParkingHouse
     {
         //amount of spots
         //taken/free slots
         //show places
         //
+
+        
     }
 }
