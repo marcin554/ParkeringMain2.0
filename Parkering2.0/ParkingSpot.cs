@@ -8,9 +8,10 @@ namespace Parkering2._0
 {
     internal class ParkingSpot:ParkingHouse
     {
-
+        
         public int sizeSpot = 4;
         public int numberSpotId;
+        
         public ParkingSpot()
         {
             numberSpotId = 0;

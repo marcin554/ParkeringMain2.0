@@ -1,13 +1,12 @@
 {
-  "exclude": [ 
-    "**/bin",
-    "**/bower_components",
-    "**/jspm_packages",
-    "**/node_modules",
-    "**/obj",
-    "**/platforms"
-  ],
-
-
-
+  "settingsPath": "../../../ConfigFiles/Settings.json",
+  "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
+  "SizeParkingSlots": 10,
+  "CurrentMaxTaken": 15,
+  "SizeParkingSlot": 20,
+  "McSize": 30,
+  "McPrice": 35,
+  "CarPrice": 43,
+  "CarSize": 23,
+  "FirstFreeMin": 23
 }

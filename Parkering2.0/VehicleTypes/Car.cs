@@ -1,4 +1,5 @@
 ﻿using System;
+using Parkering2._0.ConfigFiles;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,15 @@ namespace Parkering2._0
 {
     internal class Car : Vehicles
     {
-        public string d;
-        public Car()
+        
+        public Car(string regNummer)
         {
+            var config = Configuration.LoadStartSettings();
+
+            Type = "Car";
             Size = 5;
-            Price = 5;
+            Price = config.carPrice;
+            Time = DateTime.Now;
             
         
         }

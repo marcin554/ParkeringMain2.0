@@ -3,25 +3,80 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Parkering2._0.ConfigFiles
 {
     public class Configuration
     {
-        public int SizeParkingSlots;
 
-        public int CurrentMaxTaken;
+        public int sizeParkingSlots { get; set; }
 
-        public int SizeParkingSlot;
+        public int currentMaxTaken{ get; set; }
 
-        public int McSize;
+        public int sizeParkingSlot { get; set; }
 
-        public int CarSize;
+        public int mcSize { get; set; }
 
-        public int FirstFreeMin;
+        public int mcPrice { get; set; }
 
-        public string SettingsPath = @"../../../ConfigFiles/Settings.json";
-        public string ParkedVehicles = @"../../../ConfigFiles/Vehicles.json";
+        public int carPrice { get; set; }
+
+        public int carSize { get; set; }
+
+        public int firstFreeMin { get; set; }
+
+        
+
+        public Configuration()
+        {
+            
+
+        }
+        public Configuration config;
+        
+        public string settingsPath = @"../../../ConfigFiles/Settings.json";
+        public string parkedVehicles = @"../../../ConfigFiles/Vehicles.json";
+
+
+
+        public void SaveConfig()
+        {
+
+            Configuration save = new Configuration();
+            string save1 = JsonConvert.SerializeObject(save, Formatting.Indented);
+            File.WriteAllText(settingsPath, save1);
+
+        }
+
+        public static Configuration? LoadStartSettings(string settingsPath = @"../../../ConfigFiles/Settings.json")
+        {
+            
+            string settingsJson = File.ReadAllText(settingsPath);
+            var configuration = JsonConvert.DeserializeObject<Configuration>(settingsPath);
+            return configuration;
+        }
+        public object LoadConfig()
+        {
+            Configuration config;
+            string readall = File.ReadAllText(settingsPath);
+            config = JsonConvert.DeserializeObject<Configuration>(readall);
+            return config;
+        }
+
+
+
+        //public static void ConfigurationRead(Configuration configuration)
+        //{
+
+        //    string configurationR = File.ReadAllText(settingsPath);
+        //    configuration = JsonConvert.DeserializeObject<Configuration>(configurationR);
+        //}
+
+        //public void createNewObjectParkingList()
+        //{
+        //    string json = JsonConvert.SerializeObject(AddCar, Formatting.Indented);
+        //}
 
 
 

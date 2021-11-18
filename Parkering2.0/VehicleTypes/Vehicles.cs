@@ -12,6 +12,13 @@ namespace Parkering2._0
         public int Price { get; set; }
         public DateTime Time { get; set; }
         public int Size { get; set; }
+        public string Type { get; set; }
+        public int ID { get; set; }
+
+        public Vehicles()
+        {
+            
+        }
 
         
         //public void CreateVehicle(string RegNmr)

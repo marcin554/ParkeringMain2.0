@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parkering2._0.ConfigFiles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,20 @@ namespace Parkering2._0
 {
     public class Mc : Vehicles
     {
+
         
-        
-            public Mc()
+        public Mc(string regNummer)
         {
-            Price = 5;
-            Size = 5;
+            var config = Configuration.LoadStartSettings();
+
+            Type = "MC";
+            Price = config.mcPrice;
+            Size = 3;
+            Time = DateTime.Now;
+
         }
 
+     
         
       
 
