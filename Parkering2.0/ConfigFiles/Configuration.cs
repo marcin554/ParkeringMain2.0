@@ -66,19 +66,7 @@ namespace Parkering2._0.ConfigFiles
 
 
 
-        //public static void ConfigurationRead(Configuration configuration)
-        //{
-
-        //    string configurationR = File.ReadAllText(settingsPath);
-        //    configuration = JsonConvert.DeserializeObject<Configuration>(configurationR);
-        //}
-
-        //public void createNewObjectParkingList()
-        //{
-        //    string json = JsonConvert.SerializeObject(AddCar, Formatting.Indented);
-        //}
-
-
+    
 
 
     }

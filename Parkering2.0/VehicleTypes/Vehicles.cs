@@ -20,22 +20,7 @@ namespace Parkering2._0
             
         }
 
-        
-        //public void CreateVehicle(string RegNmr)
-        //{
-        //    RegNummer = RegNmr;
-            
-
-        //}
-
-
-        
-       
-      
-        //RegNummer
-        //Time DataTime time_Now = DataTime.Now;
-        //Price
-        //Size
+   
        
     }
 }

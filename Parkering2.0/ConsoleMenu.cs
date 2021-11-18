@@ -101,15 +101,7 @@ namespace Parkering2._0
 
 
 
-                    //var vehiclesList = new List<Vehicles>();
-                    //{
-                    //    new Mc() { ID = 1, RegNummer = AskReg(), Time = DateTime.Now };
-                    //}
-                    ////var MyJSON = JsonConvert.DeserializeObject<List<Vehicles>>(vehiclesList);
-                    //Console.WriteLine(vehiclesList[0].RegNummer);
-                    //Console.WriteLine(vehiclesList[0].Time);
-                    //Console.WriteLine(vehiclesList[0].Size);
-                    //Console.WriteLine(vehiclesList[0].Type);
+             
                     break;
                 default:
                     break;
