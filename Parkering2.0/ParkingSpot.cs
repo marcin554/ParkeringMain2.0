@@ -23,7 +23,6 @@ namespace Parkering2._0
             sizeSpot = config.sizeParkingSlot;
             avaibleSize = sizeSpot;
             
-            
 
         }
         public void a(string regNummer, string mcOrCar)

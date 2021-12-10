@@ -1,10 +1,10 @@
 {
   "settingsPath": "../../../ConfigFiles/Settings.json",
   "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-  "sizeParkingSlots": 100,
-  "currentMaxTaken": 100,
-  "sizeParkingSlot": 4,
-  "mcSize": 2,
+  "sizeParkingSlots": 100
+  "currentMaxTaken": 0,
+  "sizeParkingSlot":4,
+  "mcSize":2,
   "mcPrice": 10,
   "carPrice": 10,
   "carSize": 4,

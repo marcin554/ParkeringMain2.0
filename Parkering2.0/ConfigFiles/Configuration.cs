@@ -42,11 +42,15 @@ namespace Parkering2._0.ConfigFiles
 
         public void SaveSettings()
         {
-
-            Configuration save = new Configuration();
-            string save1 = JsonConvert.SerializeObject(save, Formatting.Indented);
+            var config = Configuration.LoadSettings();
+            if (config.currentMaxTaken != currentMaxTaken) // I dont have idea how i did that, and how it know what i mean with "currentMaxTaken". I use this to create slots. 
+            {
+                config.currentMaxTaken = currentMaxTaken;
+            }
+            
+            string save1 = JsonConvert.SerializeObject(config, Formatting.Indented);
             File.WriteAllText(settingsPath, save1);
-
+            
         }
 
         public static Configuration LoadSettings()

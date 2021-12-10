@@ -18,7 +18,7 @@ namespace Parkering2._0
 
         public ParkingHouse()
         {
-             
+            
         }
         
         public void CreateParkingSpaces()
@@ -32,12 +32,17 @@ namespace Parkering2._0
 
             if (config.currentMaxTaken <= config.sizeParkingSlots)
             {
-                
+
                 int difference = config.sizeParkingSlots - config.currentMaxTaken;
                 for (int i = 0; i < difference; i++)
-                {                   
-                    vehicleList.Add(new ParkingSpot());
+                {
+                    config.currentMaxTaken = config.currentMaxTaken + 1;
+                    Console.WriteLine(config.currentMaxTaken);
+                    vehicleList.Add(new ParkingSpot { numberSpotId = i + 1 });
+                    config.SaveSettings();
+
                 }
+               
                 
             }
             string json = JsonConvert.SerializeObject(vehicleList, Formatting.Indented);
