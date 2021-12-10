@@ -32,7 +32,10 @@ namespace Parkering2._0
             .AddChoices(new[] {
             "Take in",  "Take out",  "Move Vehicle",  "Look After", "Exit","", "Admin Tools",
     }));
+
             return choice;
+
+
         }
 
         public void MenuSwitch() //Use decision that was choosed before to do a action.

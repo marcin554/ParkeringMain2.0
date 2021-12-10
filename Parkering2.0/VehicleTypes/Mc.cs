@@ -13,11 +13,11 @@ namespace Parkering2._0
         
         public Mc(string regNummer)
         {
-            var config = Configuration.LoadStartSettings();
+            var config = Configuration.LoadSettings();
 
             Type = "MC";
             Price = config.mcPrice;
-            Size = 3;
+            Size = config.mcSize;
             Time = DateTime.Now;
 
         }

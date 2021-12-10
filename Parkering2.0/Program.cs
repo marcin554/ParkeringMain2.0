@@ -9,8 +9,9 @@ using Parkering2._0.ConfigFiles;
 
 var menu = new ConsoleMenu();
 var config = new Configuration();
-config.LoadConfig();
+
 menu.MenuSwitch();
+
 AnsiConsole.Write(new BarChart() // for some reason i cant get it to work outside of the main program class. Tried it in ConsoleMenu.
 .Width(60)
 .Label("[green bold underline]Parking slots[/]")
