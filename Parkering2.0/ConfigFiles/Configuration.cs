@@ -25,8 +25,9 @@ namespace Parkering2._0.ConfigFiles
         public int carSize { get; set; }
 
         public int firstFreeMin { get; set; }
+        public int maximumVehicles{ get; set; }
 
-        
+
 
         public Configuration()
         {
@@ -42,13 +43,13 @@ namespace Parkering2._0.ConfigFiles
 
         public void SaveSettings()
         {
-            var config = Configuration.LoadSettings();
-            if (config.currentMaxTaken != currentMaxTaken) // I dont have idea how i did that, and how it know what i mean with "currentMaxTaken". I use this to create slots. 
-            {
-                config.currentMaxTaken = currentMaxTaken;
-            }
+            //var config = Configuration.LoadSettings();
+            //if (config.currentMaxTaken != currentMaxTaken) // I dont have idea how i did that, and how it know what i mean with "currentMaxTaken". I use this to create slots. 
+            //{
+            //    currentMaxTaken = currentMaxTaken;
+            //}
             
-            string save1 = JsonConvert.SerializeObject(config, Formatting.Indented);
+            string save1 = JsonConvert.SerializeObject(this, Formatting.Indented);
             File.WriteAllText(settingsPath, save1);
             
         }
@@ -59,6 +60,14 @@ namespace Parkering2._0.ConfigFiles
              string jsonSettings = File.ReadAllText(settingsPath);
              var config = JsonConvert.DeserializeObject<Configuration>(jsonSettings);
             return config;
+        }
+
+        public static List<ParkingSpot> ReadVehiclesFromFile()
+        {
+            string parkedVehicles = @"../../../ConfigFiles/Vehicles.json";
+            string vehiclesJson = File.ReadAllText(parkedVehicles);
+            List<ParkingSpot> vehicles = JsonConvert.DeserializeObject<List<ParkingSpot>>(vehiclesJson);
+            return vehicles;
         }
 
 
@@ -84,7 +93,7 @@ namespace Parkering2._0.ConfigFiles
 
         //public static Configuration? LoadStartSettings(string settingsPath = @"../../../ConfigFiles/Settings.json")
         //{
-            
+
         //    string settingsJson = File.ReadAllText(settingsPath);
         //    var configuration = JsonConvert.DeserializeObject<Configuration>(settingsPath);
         //    return configuration;
@@ -103,7 +112,7 @@ namespace Parkering2._0.ConfigFiles
         //}
 
 
-    
+
 
 
     }

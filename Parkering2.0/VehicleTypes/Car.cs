@@ -18,8 +18,8 @@ namespace Parkering2._0
             Size = config.carSize;
             Price = config.carPrice;
             Time = DateTime.Now;
-            
-        
+            RegNummer = regNummer;
+
         }
 
         

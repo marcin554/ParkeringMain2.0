@@ -19,6 +19,7 @@ namespace Parkering2._0
             Price = config.mcPrice;
             Size = config.mcSize;
             Time = DateTime.Now;
+            RegNummer = regNummer;
 
         }
 

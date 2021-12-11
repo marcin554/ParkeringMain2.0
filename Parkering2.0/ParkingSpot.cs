@@ -7,7 +7,7 @@ using Parkering2._0.ConfigFiles;
 
 namespace Parkering2._0
 {
-    internal class ParkingSpot:ParkingHouse
+    public class ParkingSpot
     {
         
         public int sizeSpot = 4;
@@ -33,8 +33,12 @@ namespace Parkering2._0
             {
                 RegNummer = regNummer
 
-
             });
+        }
+
+        public void CheckIfThereIsSpace()
+        {
+            
         }
 
        // Available Size

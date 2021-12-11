@@ -42,7 +42,7 @@ namespace Parkering2._0
         {
             do
             {
-
+                ParkingHouse parking = new ParkingHouse();
                 string menuChoice = MenuChoice();
                 switch (menuChoice)
                 {
@@ -50,10 +50,11 @@ namespace Parkering2._0
                         TakeIn1();
                         break;
                     case "Take out":
-                        Console.WriteLine("a");
+                        TakeOut();
                         break;
                     case "Move Vehicle":
-                        Console.WriteLine("a");
+
+                        Move();
                         break;
                     case "Look After":
                         Console.WriteLine("a");
@@ -73,7 +74,7 @@ namespace Parkering2._0
             while (true);
 
         }
-
+        
 
         public void TakeIn1() //Creating MC or Car
         {
@@ -87,7 +88,7 @@ namespace Parkering2._0
                     Console.WriteLine("Your vehicle register number: ");
 
 
-                    parking.ParkingList(AskReg(),choice);                  
+                    parking.AddVehicle(AskReg(),choice);                  
                     
 
 
@@ -100,7 +101,7 @@ namespace Parkering2._0
                     break;
                 case "Car":
                     Console.WriteLine("Your vehicle register number: ");
-                    parking.ParkingList(AskReg(), choice);
+                    parking.AddVehicle(AskReg(), choice);
 
 
 
@@ -111,10 +112,26 @@ namespace Parkering2._0
             }
         }
 
+        public void Move()
+        {
+            Console.WriteLine("Give me new slot: ");
+            parking.MoveVehicle(AskReg(), AskNewSlot());
+        }
         public string AskReg() //Asking for registering number
         {
             string vehicleReg;
             vehicleReg = Console.ReadLine();
+            return vehicleReg;
+
+
+
+
+
+        }
+        public int AskNewSlot() //Asking for registering number
+        {
+            int vehicleReg;
+            vehicleReg = int.Parse(Console.ReadLine());
             return vehicleReg;
 
 
@@ -138,6 +155,11 @@ namespace Parkering2._0
 
         }
 
+        public void TakeOut()
+        {
+            Console.WriteLine("Your vehicle register number: ");
+            parking.DeleteVehicle(AskReg());
+        }
 
 
 

@@ -8,5 +8,6 @@
   "mcPrice": 10,
   "carPrice": 10,
   "carSize": 4,
-  "firstFreeMin": 10
+  "firstFreeMin": 10,
+  "maximumVehicles": 2
 }

@@ -2,1402 +2,645 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 1,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
+    "avaibleSize": 0,
+    "vehicles": [
+      {
+        "RegNummer": "544",
+        "Price": 10,
+        "Time": "2021-12-10T23:05:31.513347+01:00",
+        "Size": 4,
+        "Type": "Car",
+        "ID": 0
+      }
+    ]
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 2,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
+    "avaibleSize": 0,
+    "vehicles": [
+      {
+        "RegNummer": "655",
+        "Price": 10,
+        "Time": "2021-12-10T23:05:57.1681634+01:00",
+        "Size": 4,
+        "Type": "Car",
+        "ID": 0
+      }
+    ]
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 3,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
+    "avaibleSize": 0,
+    "vehicles": [
+      {
+        "RegNummer": "43332",
+        "Price": 10,
+        "Time": "2021-12-10T23:20:32.2668879+01:00",
+        "Size": 2,
+        "Type": "MC",
+        "ID": 0
+      },
+      {
+        "RegNummer": "984",
+        "Price": 10,
+        "Time": "2021-12-10T23:20:36.9268413+01:00",
+        "Size": 2,
+        "Type": "MC",
+        "ID": 0
+      }
+    ]
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 4,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 5,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 6,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
+    "avaibleSize": 0,
+    "vehicles": [
+      {
+        "RegNummer": "9877",
+        "Price": 10,
+        "Time": "2021-12-10T23:40:59.1634161+01:00",
+        "Size": 4,
+        "Type": "Car",
+        "ID": 0
+      }
+
+    ]
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 7,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 8,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 9,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 10,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 11,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 12,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 13,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 14,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 15,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 16,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 17,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 18,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 19,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 20,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 21,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 22,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 23,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 24,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 25,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 26,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 27,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 28,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 29,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 30,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 31,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 32,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 33,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 34,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 35,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 36,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 37,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 38,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 39,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 40,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 41,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 42,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 43,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 44,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 45,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 46,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 47,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 48,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 49,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 50,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 51,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 52,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 53,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 54,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 55,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 56,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 57,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 58,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 59,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 60,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 61,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 62,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 63,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 64,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 65,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 66,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 67,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 68,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 69,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 70,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 71,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 72,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 73,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 74,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 75,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 76,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 77,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 78,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 79,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 80,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 81,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 82,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 83,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 84,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 85,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 86,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 87,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 88,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 89,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 90,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 91,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 92,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 93,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 94,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 95,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 96,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 97,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 98,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 99,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 100,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  }
-][
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 1,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 2,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 3,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 4,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 5,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 6,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 7,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 8,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 9,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 10,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 11,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 12,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 13,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 14,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 15,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 16,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 17,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 18,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 19,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 20,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 21,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 22,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 23,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 24,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 25,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 26,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 27,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 28,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 29,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 30,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 31,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 32,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 33,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 34,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 35,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 36,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 37,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 38,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 39,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 40,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 41,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 42,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 43,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 44,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 45,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 46,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 47,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 48,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 49,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 50,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 51,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 52,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 53,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 54,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 55,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 56,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 57,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 58,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 59,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 60,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 61,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 62,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 63,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 64,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 65,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 66,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 67,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 68,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 69,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 70,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 71,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 72,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 73,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 74,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 75,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 76,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 77,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 78,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 79,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 80,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  }
-][
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 1,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 2,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 3,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 4,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 5,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 6,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 7,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 8,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 9,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 10,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 11,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 12,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 13,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 14,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 15,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 16,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 17,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 18,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 19,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 20,
-    "parkedVehicles": "../../../ConfigFiles/Vehicles.json",
     "avaibleSize": 4,
     "vehicles": []
   }
