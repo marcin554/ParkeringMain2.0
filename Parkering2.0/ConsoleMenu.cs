@@ -235,7 +235,7 @@ namespace Parkering2._0
 
             Table t1 = new Table();
 
-            t1.AddColumns("[grey]EMPTY SPOT =[/] [green]GREEN[/]", "[grey]FULL SPOT =[/] [red]RED[/]", "[yellow]FULL SPOT =[/] [Yellow]HALF TAKEN[/]").Centered().Alignment(Justify.Center);
+            t1.AddColumns("[grey]EMPTY SPOT =[/] [green]GREEN[/]", "[grey]FULL SPOT =[/] [red]RED[/]", "[grey]HALF TAKEN =[/] [Yellow]YELLOW[/]").Centered().Alignment(Justify.Center);
             AnsiConsole.Write(t1);
             Table newTable = new Table().Centered();
             var parkingSpotColorMarking = "";
