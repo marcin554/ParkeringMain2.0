@@ -13,7 +13,6 @@ namespace Parkering2._0
         public DateTime Time { get; set; }
         public int Size { get; set; }
         public string Type { get; set; }
-        public int ID { get; set; }
 
         public Vehicles()
         {

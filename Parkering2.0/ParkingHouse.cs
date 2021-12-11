@@ -167,7 +167,7 @@ namespace Parkering2._0
             vehicleList = Configuration.ReadVehiclesFromFile();
 
             findVehicle(gotRegNummerFind);
-            if (vehicleList[spotNumber].vehicles[positionNumber].Type == "MC")
+            if (vehicleList[spotNumber].vehicles[positionNumber].Type == "MC" && vehicleList[spotNumber].vehicles[positionNumber].RegNummer == gotRegNummerFind)
             {
                 Kvitto(vehicleList[spotNumber].vehicles[positionNumber].RegNummer, vehicleList[spotNumber].numberSpotId);
                 countPrice(vehicleList[spotNumber].vehicles[positionNumber].Time, vehicleList[spotNumber].vehicles[positionNumber].Type);
@@ -176,7 +176,7 @@ namespace Parkering2._0
                 DeleteAndSaveFileVehicles();
 
             }
-            else if (vehicleList[spotNumber].vehicles[positionNumber].Type == "Car")
+            else if (vehicleList[spotNumber].vehicles[positionNumber].Type == "Car" && vehicleList[spotNumber].vehicles[positionNumber].RegNummer == gotRegNummerFind)
             {
                 Kvitto(vehicleList[spotNumber].vehicles[positionNumber].RegNummer, vehicleList[spotNumber].numberSpotId);
                 countPrice(vehicleList[spotNumber].vehicles[positionNumber].Time, vehicleList[spotNumber].vehicles[positionNumber].Type);
@@ -184,6 +184,11 @@ namespace Parkering2._0
                 vehicleList[spotNumber].avaibleSize = vehicleList[spotNumber].avaibleSize + config.carSize;
                 DeleteAndSaveFileVehicles();
 
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Couldn't find your vehicle.");
             }
         }
 
@@ -195,7 +200,7 @@ namespace Parkering2._0
 
 
             findVehicle(gotRegNummerFind);
-            if (vehicleList[spotNumber].vehicles[positionNumber].Type == "MC")
+            if (vehicleList[spotNumber].vehicles[positionNumber].Type == "MC" && vehicleList[spotNumber].vehicles[positionNumber].RegNummer == gotRegNummerFind)
             {
                 string type = "mc";
                 bool checkSpace = CheckIfThereIsSpace(newSlot, type);
@@ -212,7 +217,7 @@ namespace Parkering2._0
                 }
 
             }
-            else if (vehicleList[spotNumber].vehicles[positionNumber].Type == "Car")
+            else if (vehicleList[spotNumber].vehicles[positionNumber].Type == "Car" && vehicleList[spotNumber].vehicles[positionNumber].RegNummer == gotRegNummerFind)
             {
                 string type = "car";
                 bool checkSpace = CheckIfThereIsSpace(newSlot, type);
@@ -228,6 +233,12 @@ namespace Parkering2._0
                     DeleteAndSaveFileVehicles();
                 }
 
+
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Couldn't find your vehicle.");
             }
 
 
@@ -235,10 +246,10 @@ namespace Parkering2._0
 
 
         }
-
+    
         public void findVehicle(string gotRegNummerFind) // Search tool for vehicles, it goes through list, to find a regnummer that is same as the one in input.
         {
-
+            
             var config = Configuration.LoadSettings();
             vehicleList = Configuration.ReadVehiclesFromFile();
 
@@ -251,6 +262,7 @@ namespace Parkering2._0
                     {
                         if (vehicleList[i].vehicles[0].RegNummer == gotRegNummerFind)
                         {
+
                             spotNumber = i;
                             positionNumber = 0;
                             break;
@@ -276,6 +288,7 @@ namespace Parkering2._0
                     {
                         if (vehicleList[i].vehicles[0].RegNummer == gotRegNummerFind)
                         {
+
                             spotNumber = i;
                             positionNumber = 0;
                         }
@@ -288,16 +301,20 @@ namespace Parkering2._0
                 }
                 else if (vehicleList[i].avaibleSize == config.sizeParkingSlot)
                 {
+                    
+                  
                     continue;
                 }
                 else
                 {
+                    
                     continue;
                 }
 
 
 
             }
+            
 
         }
 
@@ -308,6 +325,7 @@ namespace Parkering2._0
         }
         public bool CheckIfThereIsSpace(int slotId, string type) // Check if there is avaible space in the parkingSpot
         {
+           
             bool answer = false;
             var config = Configuration.LoadSettings();
             vehicleList = Configuration.ReadVehiclesFromFile();

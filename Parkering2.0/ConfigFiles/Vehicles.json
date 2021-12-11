@@ -9,8 +9,7 @@
         "Price": 10,
         "Time": "2021-12-10T23:05:31.513347+01:00",
         "Size": 4,
-        "Type": "Car",
-        "ID": 0
+        "Type": "Car"
       }
     ]
   },
@@ -24,8 +23,7 @@
         "Price": 10,
         "Time": "2021-12-10T23:05:57.1681634+01:00",
         "Size": 4,
-        "Type": "Car",
-        "ID": 0
+        "Type": "Car"
       }
     ]
   },
@@ -39,16 +37,14 @@
         "Price": 10,
         "Time": "2021-12-10T23:20:32.2668879+01:00",
         "Size": 2,
-        "Type": "MC",
-        "ID": 0
+        "Type": "MC"
       },
       {
         "RegNummer": "65456",
         "Price": 10,
         "Time": "2021-12-11T05:31:50.3017664+01:00",
         "Size": 2,
-        "Type": "MC",
-        "ID": 0
+        "Type": "MC"
       }
     ]
   },
@@ -62,16 +58,23 @@
         "Price": 20,
         "Time": "2021-12-11T13:49:48.2927986+01:00",
         "Size": 4,
-        "Type": "Car",
-        "ID": 0
+        "Type": "Car"
       }
     ]
   },
   {
     "sizeSpot": 4,
     "numberSpotId": 5,
-    "avaibleSize": 4,
-    "vehicles": []
+    "avaibleSize": 0,
+    "vehicles": [
+      {
+        "RegNummer": "AB123",
+        "Price": 20,
+        "Time": "2021-12-12T00:15:29.7491911+01:00",
+        "Size": 4,
+        "Type": "Car"
+      }
+    ]
   },
   {
     "sizeSpot": 4,
@@ -281,8 +284,7 @@
         "Price": 10,
         "Time": "2021-12-10T23:40:59.1634161+01:00",
         "Size": 4,
-        "Type": "Car",
-        "ID": 0
+        "Type": "Car"
       }
     ]
   },
@@ -452,8 +454,7 @@
         "Price": 10,
         "Time": "2021-12-11T13:46:21.1840953+01:00",
         "Size": 2,
-        "Type": "MC",
-        "ID": 0
+        "Type": "MC"
       }
     ]
   },
@@ -484,8 +485,16 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 71,
-    "avaibleSize": 4,
-    "vehicles": []
+    "avaibleSize": 2,
+    "vehicles": [
+      {
+        "RegNummer": "984",
+        "Price": 10,
+        "Time": "2021-12-10T23:20:36.9268413+01:00",
+        "Size": 2,
+        "Type": "MC"
+      }
+    ]
   },
   {
     "sizeSpot": 4,
@@ -538,17 +547,8 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 80,
-    "avaibleSize": 2,
-    "vehicles": [
-      {
-        "RegNummer": "984",
-        "Price": 10,
-        "Time": "2021-12-10T23:20:36.9268413+01:00",
-        "Size": 2,
-        "Type": "MC",
-        "ID": 0
-      }
-    ]
+    "avaibleSize": 4,
+    "vehicles": []
   },
   {
     "sizeSpot": 4,
@@ -667,6 +667,12 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 100,
+    "avaibleSize": 4,
+    "vehicles": []
+  },
+  {
+    "sizeSpot": 4,
+    "numberSpotId": 101,
     "avaibleSize": 4,
     "vehicles": []
   }

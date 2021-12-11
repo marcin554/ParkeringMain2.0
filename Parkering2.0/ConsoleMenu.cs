@@ -164,28 +164,30 @@ namespace Parkering2._0
             switch (menuChange)
             {
                 case "Change amount of parking slots.":
-                    
+                    Console.Clear();
                     config.sizeParkingSlots = NewValue();
                     config.SaveSettings();
                     parking.CreateParkingSpaces();
 
                     break;
                 case "Change price of MC.":
+                    Console.Clear();
                     config.mcPrice = NewValue();
                     config.SaveSettings();
 
                     break;
                 case "Change price of Car.":
-
+                    Console.Clear();
                     config.carPrice = NewValue();
                     config.SaveSettings();
                     break;
                 case "Change size of MC.":
+                    Console.Clear();
                     config.mcSize = NewValue();
                     config.SaveSettings();
                     break;
                 case "Change size of Car.":
-
+                    Console.Clear();
                     config.carSize = NewValue();
                     config.SaveSettings();
                     break;
