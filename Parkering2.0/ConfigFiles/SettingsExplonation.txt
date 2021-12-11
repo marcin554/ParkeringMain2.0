@@ -1,0 +1,13 @@
+﻿{
+  "settingsPath": "../../../ConfigFiles/Settings.json", .. it just got here by chance
+  "parkedVehicles": "../../../ConfigFiles/Vehicles.json", ^
+  "sizeParkingSlots": 100, //Amount of parking spots
+  "currentMaxTaken": 100, // Maximum that is added currently(dont change it, it make adding/deleting spots work)
+  "sizeParkingSlot": 4, // Size of the parking spot
+  "mcSize": 2, // Motorcycle size
+  "mcPrice": 10, // Motorcycle Price per hour
+  "carPrice": 20, // Car price per hour
+  "carSize": 4, // Car size
+  "firstFreeMin": 10, // How many of first minutes are free
+  "maximumVehicles": 2 // Amount of the vehicles, increase it if you increase size of parking slot (How many objects there are possible at once in one spot.)
+}

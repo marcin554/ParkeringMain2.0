@@ -110,17 +110,7 @@ namespace Parkering2._0
 
 
 
-            //string regNummer = "2";
-            //vehicleList[2].vehicles.Add(new Mc(regNummer));
-            //Console.WriteLine(vehicleList[2].vehicles[0].Price);
-            //ParkingSpot a = new ParkingSpot { };
-            //Console.WriteLine(a.CheckIfThereIsSpace);
-
-
-            //string json = JsonConvert.SerializeObject(vehicleList, Formatting.Indented);
-            //File.AppendAllText(parkedVehicles, json);
-            //Console.WriteLine(json);
-
+  
         }
 
         public void AddVehicle(string gotRegNummer, string mcOrCar) // Add Vehicles to existing parkingSpots
@@ -165,10 +155,7 @@ namespace Parkering2._0
 
                 }
 
-                //vehicleList.AddRange(ParkingVehiclesList);
-                //string json = JsonConvert.SerializeObject(ParkingVehiclesList, Formatting.Indented);
-                //File.AppendAllText(parkedVehicles, json);
-                //Console.WriteLine(json);      
+         
             }
         }
 

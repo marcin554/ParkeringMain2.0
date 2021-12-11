@@ -12,7 +12,8 @@ var config = new Configuration();
 
 menu.MenuSwitch();
 
-// 
+// Used a bit of help of Edwin code, used it mainly at early stage to understand more how the objects work.
+// And a little on parking map, which i edited a bit.
 
 
 
@@ -34,15 +35,3 @@ menu.MenuSwitch();
 
 
 
-//"SizeParkingSlots": 100,
-//  "CurrentMaxTaken": 100,
-//  "SizeParkingSlot": 4,
-
-//  "McSize": 2,
-//  "CarSize": 4,
-
-
-//  "McPrice": 10,
-//  "CarPrice": 20,
-
-//  "FirstFreeMin": 10

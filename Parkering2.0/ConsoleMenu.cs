@@ -17,10 +17,6 @@ namespace Parkering2._0
         public ParkingHouse parking = new ParkingHouse();
 
 
-        //TAKE IN A VEHICLE
-        //TAKE OUT A VEHICLE
-        //SEARCH AFTER A VEHICLE
-        //EXIT
 
         public string MenuChoice() // Give alternatives to user to choose. Using Spectre console. And it output the decision, so it can be used later.
         {
@@ -130,6 +126,7 @@ namespace Parkering2._0
             string vehicleReg = Console.ReadLine();
             vehicleReg = vehicleReg.ToUpper();
             return vehicleReg;
+
         }
         public int AskNewSlot() //Asking for registering number
         {
@@ -227,10 +224,7 @@ namespace Parkering2._0
             return a;
         }//Using this input into ChangeOptions
 
-        public void ChangeOptions()
-        {
-
-        }
+       
 
         public void ParkingMap()
         {
