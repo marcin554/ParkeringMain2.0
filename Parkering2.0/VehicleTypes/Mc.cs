@@ -13,7 +13,7 @@ namespace Parkering2._0
         
         public Mc(string regNummer)
         {
-            var config = Configuration.LoadSettings();
+            var config = Configuration.LoadSettings(); // load settings that can be used to give values
 
             Type = "MC";
             Price = config.mcPrice;

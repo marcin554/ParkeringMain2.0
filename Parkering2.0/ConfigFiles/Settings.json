@@ -6,7 +6,7 @@
   "sizeParkingSlot": 4,
   "mcSize": 2,
   "mcPrice": 10,
-  "carPrice": 10,
+  "carPrice": 20,
   "carSize": 4,
   "firstFreeMin": 10,
   "maximumVehicles": 2

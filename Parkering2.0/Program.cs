@@ -9,14 +9,10 @@ using Parkering2._0.ConfigFiles;
 
 var menu = new ConsoleMenu();
 var config = new Configuration();
+
 menu.MenuSwitch();
 
-AnsiConsole.Write(new BarChart() 
-.Width(60)
-.Label("[green bold underline]Parking slots[/]")
-.CenterLabel()
-.AddItem("Free", 12, Color.Green)
-.AddItem("Taken", 54, Color.Red));
+
 
 
 

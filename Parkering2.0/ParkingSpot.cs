@@ -25,21 +25,7 @@ namespace Parkering2._0
             
 
         }
-        public void a(string regNummer, string mcOrCar)
-        {
-            //vehicles.Add(new Vehicles());
-
-            vehicles.Add(new Car(regNummer)
-            {
-                RegNummer = regNummer
-
-            });
-        }
-
-        public void CheckIfThereIsSpace()
-        {
-            
-        }
+  
 
        // Available Size
             //Spot Number

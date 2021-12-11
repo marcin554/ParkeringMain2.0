@@ -12,7 +12,7 @@ namespace Parkering2._0
 
 
 
-        int amountOfSpots = 100;
+       
 
         string parkedVehicles = @"../../../ConfigFiles/Vehicles.json";
         List<ParkingSpot> vehicleList = new List<ParkingSpot>();
@@ -28,31 +28,85 @@ namespace Parkering2._0
         }
         public void CreateParkingSpaces()
         {
-            parkingSpotList();
+            int amount = 0;
+            bool falsew = false;
             var config = Configuration.LoadSettings();
-           
-            
-            
-
-
-
-
-
-            if (config.currentMaxTaken <= config.sizeParkingSlots)
+            vehicleList = Configuration.ReadVehiclesFromFile();
+            itsSaveToDelete();
+            if (config.currentMaxTaken < config.sizeParkingSlots)
             {
-
                 int difference = config.sizeParkingSlots - config.currentMaxTaken;
                 for (int i = 0; i < difference; i++)
                 {
                     config.currentMaxTaken = config.currentMaxTaken + 1;
-                    Console.WriteLine(config.currentMaxTaken);
                     vehicleList.Add(new ParkingSpot { numberSpotId = config.currentMaxTaken });
+                    DeleteAndSaveFileVehicles();
                     config.SaveSettings();
-
+                    Console.WriteLine("Created Spot.");
                 }
 
-
             }
+           
+            else if (config.currentMaxTaken > config.sizeParkingSlots && falsew == true)
+            {
+                 
+                for (int i = config.currentMaxTaken +1; i > config.sizeParkingSlots; i--)
+                {
+
+                    vehicleList.RemoveAt(i);
+               
+                    config.currentMaxTaken = config.currentMaxTaken - 1;
+                    config.SaveSettings();
+                    DeleteAndSaveFileVehicles();
+                    
+                    
+                    Console.WriteLine("Deleted Spot.");
+
+                }
+            }
+           
+            void itsSaveToDelete()
+            {
+                
+               
+                for (int i = config.sizeParkingSlots; i < config.currentMaxTaken; i++)
+                {
+                    if (vehicleList[i].avaibleSize == config.sizeParkingSlot)
+                    {
+
+                        
+                        amount++;
+                     
+                        
+                        
+
+                    }
+                    
+
+                }
+                if (amount == config.currentMaxTaken - config.sizeParkingSlots){
+                    falsew = true;
+
+                    
+            }
+                else if(amount != config.currentMaxTaken - config.sizeParkingSlots)
+                {
+                    falsew = false;
+                    
+
+                }
+                else
+                {
+                    config.sizeParkingSlots = config.currentMaxTaken;
+                    config.SaveSettings();
+                }
+               
+                
+            }
+
+            
+
+       
             //string regNummer = "2";
             //vehicleList[2].vehicles.Add(new Mc(regNummer));
             //Console.WriteLine(vehicleList[2].vehicles[0].Price);
@@ -65,6 +119,7 @@ namespace Parkering2._0
             //Console.WriteLine(json);
 
         }
+       
         public void AddVehicle(string gotRegNummer, string mcOrCar)
         {      
             var config = Configuration.LoadSettings();
@@ -83,6 +138,7 @@ namespace Parkering2._0
                         vehicleList[i].vehicles.Add(newMc);
 
                         DeleteAndSaveFileVehicles();
+                        CreationKvitto(vehicleList[i].numberSpotId);
                         Console.WriteLine(vehicleList[i].vehicles[0].RegNummer);
                         break;
                     }
@@ -96,8 +152,9 @@ namespace Parkering2._0
                         vehicleList[i].vehicles.Add(newcar);
 
                         DeleteAndSaveFileVehicles();
-                    
-                        break;
+                    CreationKvitto(vehicleList[i].numberSpotId);
+
+                    break;
                        
 
 
@@ -122,14 +179,17 @@ namespace Parkering2._0
             findVehicle(gotRegNummerFind);
             if (vehicleList[spotNumber].vehicles[positionNumber].Type == "MC")
             {
-                      
-             vehicleList[spotNumber].vehicles.RemoveAt(positionNumber);
+                Kvitto(vehicleList[spotNumber].vehicles[positionNumber].RegNummer, vehicleList[spotNumber].numberSpotId);
+                countPrice(vehicleList[spotNumber].vehicles[positionNumber].Time, vehicleList[spotNumber].vehicles[positionNumber].Type);
+       vehicleList[spotNumber].vehicles.RemoveAt(positionNumber);
              vehicleList[spotNumber].avaibleSize = vehicleList[spotNumber].avaibleSize + config.mcSize;
               DeleteAndSaveFileVehicles();
 
             }
             else if (vehicleList[spotNumber].vehicles[positionNumber].Type == "Car")
             {
+                Kvitto(vehicleList[spotNumber].vehicles[positionNumber].RegNummer, vehicleList[spotNumber].numberSpotId);
+                countPrice(vehicleList[spotNumber].vehicles[positionNumber].Time, vehicleList[spotNumber].vehicles[positionNumber].Type);
                 vehicleList[spotNumber].vehicles.RemoveAt(positionNumber);
                 vehicleList[spotNumber].avaibleSize = vehicleList[spotNumber].avaibleSize + config.carSize;
                 DeleteAndSaveFileVehicles();
@@ -151,7 +211,6 @@ namespace Parkering2._0
                 bool checkSpace = CheckIfThereIsSpace(newSlot, type);
                 if (checkSpace == true)
                 {
-
                     var tempVehicle = vehicleList[spotNumber].vehicles[positionNumber];
                     vehicleList[spotNumber].vehicles.RemoveAt(positionNumber);
                     vehicleList[newSlot].vehicles.Add(tempVehicle);
@@ -182,7 +241,7 @@ namespace Parkering2._0
 
 
                 
-           
+        
         }
        
         public void findVehicle(string gotRegNummerFind)
@@ -203,7 +262,6 @@ namespace Parkering2._0
                             spotNumber = i;
                             positionNumber = 0;
                             break;
-
                         }
                         else
                         {
@@ -216,8 +274,6 @@ namespace Parkering2._0
                         {
                             spotNumber = i;
                             positionNumber = 0;
-
-
                         }
                         else
                         {
@@ -230,30 +286,33 @@ namespace Parkering2._0
                         {
                             spotNumber = i;
                             positionNumber = 0;
-
-
                         }
                         else if (vehicleList[i].vehicles[1].RegNummer == gotRegNummerFind) // if there is 0 avaible, check 2nd position on list
                         {
                             spotNumber = i;
                             positionNumber = 1;
-
-
                         }
                     }
-                  
-
                 }
                 else if(vehicleList[i].avaibleSize == config.sizeParkingSlot)
                 {
                     continue;
                 }
-                break;
+                else
+                {
+                    continue;
+                }
 
                 
                 
             }
             
+        }
+
+        public int SearchVehicle(string regNr) 
+        { // for user to find parking of his 
+            findVehicle(regNr);
+            return spotNumber;
         }
         public bool CheckIfThereIsSpace(int slotId, string type) //TODO: Get back here (Oliver code) 
         {
@@ -294,6 +353,46 @@ namespace Parkering2._0
         public void DeleteAllVehicles()
         {
             
+        }
+
+        public void countPrice(DateTime timeRegistered, string Type)
+        {
+            
+            var config = Configuration.LoadSettings();
+
+            DateTime now = DateTime.Now;
+            DateTime minusFree = DateTime.Now - new TimeSpan(0, config.firstFreeMin, 0);
+
+            TimeSpan span = now.Subtract(timeRegistered);
+
+     
+            if(Type == "Car")
+            {
+                int totalCost = span.Hours * config.carPrice;
+                Console.WriteLine("Your total cost is: {0} CZK.", totalCost);
+                Console.WriteLine("");
+            }
+            else if(Type == "MC"){
+                int totalCost = span.Hours * config.mcPrice;
+                Console.WriteLine("Your total cost is: {0} CZK.", totalCost);
+                Console.WriteLine("");
+            }
+        }
+
+        public void Kvitto(string RegNmr, int slotNr)
+        {
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("Your vehicle with registernumber: {0} on parking place {1} have been taken out.", RegNmr, slotNr);
+            Console.WriteLine("=================================================");
+        }
+
+        public void CreationKvitto (int slotNr)
+        {
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("You placed your vehicle on spot: {0} ",slotNr);
+            Console.WriteLine("=================================================");
         }
 
       

@@ -41,20 +41,16 @@ namespace Parkering2._0.ConfigFiles
 
 
 
-        public void SaveSettings()
+        public void SaveSettings() // Save the settings that are sended from current memory and saving it as file (settings.json)
         {
-            //var config = Configuration.LoadSettings();
-            //if (config.currentMaxTaken != currentMaxTaken) // I dont have idea how i did that, and how it know what i mean with "currentMaxTaken". I use this to create slots. 
-            //{
-            //    currentMaxTaken = currentMaxTaken;
-            //}
+      
             
             string save1 = JsonConvert.SerializeObject(this, Formatting.Indented);
             File.WriteAllText(settingsPath, save1);
             
         }
 
-        public static Configuration LoadSettings()
+        public static Configuration LoadSettings() // Read the settings.json file, so the values can be used
         {
              string settingsPath = @"../../../ConfigFiles/Settings.json";
              string jsonSettings = File.ReadAllText(settingsPath);
@@ -62,7 +58,7 @@ namespace Parkering2._0.ConfigFiles
             return config;
         }
 
-        public static List<ParkingSpot> ReadVehiclesFromFile()
+        public static List<ParkingSpot> ReadVehiclesFromFile() // Read vehicles.json file and the list of spots that include list of vehicles.
         {
             string parkedVehicles = @"../../../ConfigFiles/Vehicles.json";
             string vehiclesJson = File.ReadAllText(parkedVehicles);

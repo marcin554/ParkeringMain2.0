@@ -12,7 +12,7 @@ namespace Parkering2._0
         
         public Car(string regNummer)
         {
-            var config = Configuration.LoadSettings();
+            var config = Configuration.LoadSettings(); // load settings that can be used to give values
 
             Type = "Car";
             Size = config.carSize;
