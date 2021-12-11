@@ -128,6 +128,7 @@ namespace Parkering2._0
         public string AskReg() //Asking for registering number
         {             
             string vehicleReg = Console.ReadLine();
+            vehicleReg = vehicleReg.ToUpper();
             return vehicleReg;
         }
         public int AskNewSlot() //Asking for registering number
@@ -168,9 +169,9 @@ namespace Parkering2._0
                 case "Change amount of parking slots.":
                     
                     config.sizeParkingSlots = NewValue();
-                    parking.CreateParkingSpaces();
                     config.SaveSettings();
-                    
+                    parking.CreateParkingSpaces();
+
                     break;
                 case "Change price of MC.":
                     config.mcPrice = NewValue();
@@ -224,7 +225,7 @@ namespace Parkering2._0
             Console.WriteLine("Give me your new value: ");
             int a = int.Parse(Console.ReadLine());
             return a;
-        }
+        }//Using this input into ChangeOptions
 
         public void ChangeOptions()
         {
@@ -275,7 +276,7 @@ namespace Parkering2._0
             newTable.AddColumn(new TableColumn(printResult));
             AnsiConsole.Write(newTable);
 
-        }
+        } // Show parking map, used and a little edited Edwin map.
 
 
 

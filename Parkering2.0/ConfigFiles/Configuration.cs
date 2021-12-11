@@ -87,25 +87,6 @@ namespace Parkering2._0.ConfigFiles
 
 
 
-        //public static Configuration? LoadStartSettings(string settingsPath = @"../../../ConfigFiles/Settings.json")
-        //{
-
-        //    string settingsJson = File.ReadAllText(settingsPath);
-        //    var configuration = JsonConvert.DeserializeObject<Configuration>(settingsPath);
-        //    return configuration;
-        //}
-        //public void LoadSettings()
-        //{
-        //    string settingsPath = @"../../../ConfigFiles/Settings.json";
-        //    string settingsJson = File.ReadAllText(settingsPath);
-        //    JsonConvert.DeserializeObject<Configuration>(settingsJson);
-        //}
-        //public List ReadVehicles()
-        //{
-        //    string vehiclesJson = File.ReadAllText(settingsPath);
-        //    List<Vehicles> vehicles = JsonConvert.DeserializeObject<List<Vehicles>>(vehiclesJson);
-
-        //}
 
 
 
