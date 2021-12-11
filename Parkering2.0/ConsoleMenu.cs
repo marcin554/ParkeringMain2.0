@@ -40,9 +40,10 @@ namespace Parkering2._0
 
         public void MenuSwitch() //Use decision that was choosed before to do a action.
         {
+            ParkingHouse parking = new ParkingHouse();
             do
             {
-                ParkingHouse parking = new ParkingHouse();
+                
                 string menuChoice = MenuChoice();
                 switch (menuChoice)
                 {
@@ -114,13 +115,15 @@ namespace Parkering2._0
 
         public void Move()
         {
-            Console.WriteLine("Give me new slot: ");
+            Console.WriteLine("");
             parking.MoveVehicle(AskReg(), AskNewSlot());
+             
         }
         public string AskReg() //Asking for registering number
         {
-            string vehicleReg;
-            vehicleReg = Console.ReadLine();
+            
+            
+            string vehicleReg = Console.ReadLine();
             return vehicleReg;
 
 
@@ -130,9 +133,12 @@ namespace Parkering2._0
         }
         public int AskNewSlot() //Asking for registering number
         {
-            int vehicleReg;
-            vehicleReg = int.Parse(Console.ReadLine());
-            return vehicleReg;
+            Console.WriteLine("Give me your new slot number: ");
+            
+            int newSlot = int.Parse(Console.ReadLine());
+            newSlot = newSlot - 1;
+            
+            return newSlot;
 
 
 

@@ -111,175 +111,176 @@ namespace Parkering2._0
                     //Console.WriteLine(json);      
             }
             }
+
+        int spotNumber;
+        int positionNumber;
         public void DeleteVehicle(string gotRegNummerFind)
         {
             var config = Configuration.LoadSettings();
             vehicleList = Configuration.ReadVehiclesFromFile();
-            for (int i = 0; i < config.sizeParkingSlots; i++)
+
+            findVehicle(gotRegNummerFind);
+            if (vehicleList[spotNumber].vehicles[positionNumber].Type == "MC")
             {
-                bool goNextLoop = false;
-                for (int y = 0; y <= config.maximumVehicles -1; y++)
-                {
-                    Console.WriteLine("Loop");
-                    Console.WriteLine(i);
-                    
-                    if (vehicleList[i].avaibleSize != config.sizeParkingSlot && gotRegNummerFind == vehicleList[i].vehicles[y].RegNummer)
-                    {
-                        Console.WriteLine("were");
-                        if (vehicleList[i].vehicles[y].Type == "MC")
-                        {
-                            goNextLoop = true;
-                            //vehicleList[i].vehicles.Remove(new Vehicles());
-                            vehicleList[i].vehicles.RemoveAt(y);
-                            vehicleList[i].avaibleSize = vehicleList[i].avaibleSize + config.mcSize;
-                            DeleteAndSaveFileVehicles();
-                            y = config.maximumVehicles - 1;
-                            break;
-                        }
-                        else if (vehicleList[i].vehicles[y].Type == "Car")
-                        {
-                            Console.WriteLine("were");
-                            goNextLoop = true;
-                            //vehicleList[i].vehicles.Remove(new Vehicles());
-                            
-                            vehicleList[i].vehicles.RemoveAt(y);
-                            
-                            Console.WriteLine("a");
-                            vehicleList[i].avaibleSize = vehicleList[i].avaibleSize + config.carSize;
-                            
-                            DeleteAndSaveFileVehicles();
-                            break;
-                        }
-                        
-                        else
-                        {
-                            Console.WriteLine("abc");
-                        }
-                        
-                    }
-                    else if (vehicleList[i].avaibleSize == config.sizeParkingSlot) // If the spot have all places it mean that there is nothing there, skip. This... Dont connected it to this if and it was breaking my code for like 2-3h...
-                    {
-                        break;
-                       
-                    }
-                    if (vehicleList[i].vehicles[y].Type == "Car")
-                    {
-                        break;
+                      
+             vehicleList[spotNumber].vehicles.RemoveAt(positionNumber);
+             vehicleList[spotNumber].avaibleSize = vehicleList[spotNumber].avaibleSize + config.mcSize;
+              DeleteAndSaveFileVehicles();
 
-                    }
-                   
-                    
-                    
-
-                }
-                if (goNextLoop == true)
-                {
-                    
-                    break;
-                }
-                
-
-
+            }
+            else if (vehicleList[spotNumber].vehicles[positionNumber].Type == "Car")
+            {
+                vehicleList[spotNumber].vehicles.RemoveAt(positionNumber);
+                vehicleList[spotNumber].avaibleSize = vehicleList[spotNumber].avaibleSize + config.carSize;
+                DeleteAndSaveFileVehicles();
 
             }
         }
 
         public void MoveVehicle (string gotRegNummerFind, int newSlot)
         {
+
             var config = Configuration.LoadSettings();
             vehicleList = Configuration.ReadVehiclesFromFile();
 
 
-            for (int i = 0; i < config.sizeParkingSlots; i++)
+            findVehicle(gotRegNummerFind);
+            if (vehicleList[spotNumber].vehicles[positionNumber].Type == "MC")
             {
-                bool goNextLoop = false;
-                for (int y = 0; y <= config.maximumVehicles - 1; y++)
-                {
-                    Console.WriteLine("Loop");
-                    Console.WriteLine(i);
-
-                    if (vehicleList[i].avaibleSize != config.sizeParkingSlot && gotRegNummerFind == vehicleList[i].vehicles[y].RegNummer)
-                    {
-                        Console.WriteLine("were");
-                        if (vehicleList[i].vehicles[y].Type == "MC")
-                        {
-                            var before = vehicleList[i].vehicles[y];
-                            vehicleList[i].vehicles.RemoveAt(y);
-                            string type = "mc";
-                            bool checkSpace = CheckIfThereIsSpace(newSlot, type);
-                            if (newSlot >= config.mcSize)
-                            {
-                                
-                            }
-                            
-                            break;
-                        }
-                        else if (vehicleList[i].vehicles[y].Type == "Car")
-                        {
-                            Console.WriteLine("were");
-                            goNextLoop = true;
-                            //vehicleList[i].vehicles.Remove(new Vehicles());
-
-                            vehicleList[i].vehicles.RemoveAt(y);
-
-                            Console.WriteLine("a");
-                            vehicleList[i].avaibleSize = vehicleList[i].avaibleSize + config.carSize;
-
-                            DeleteAndSaveFileVehicles();
-                            break;
-                        }
-
-                        else
-                        {
-                            Console.WriteLine("abc");
-                        }
-
-                    }
-                    else if (vehicleList[i].avaibleSize == config.sizeParkingSlot) // If the spot have all places it mean that there is nothing there, skip. This... Dont connected it to this if and it was breaking my code for like 2-3h...
-                    {
-                        break;
-
-                    }
-                    if (vehicleList[i].vehicles[y].Type == "Car")
-                    {
-                        break;
-
-                    }
-
-
-
-
-                }
-                if (goNextLoop == true)
+                string type = "mc";
+                bool checkSpace = CheckIfThereIsSpace(newSlot, type);
+                if (checkSpace == true)
                 {
 
-                    break;
+                    var tempVehicle = vehicleList[spotNumber].vehicles[positionNumber];
+                    vehicleList[spotNumber].vehicles.RemoveAt(positionNumber);
+                    vehicleList[newSlot].vehicles.Add(tempVehicle);
+                    vehicleList[spotNumber].avaibleSize = vehicleList[spotNumber].avaibleSize + config.mcSize;
+                    vehicleList[newSlot].avaibleSize = vehicleList[newSlot].avaibleSize - config.mcSize;
+
+                    DeleteAndSaveFileVehicles();
                 }
-
-
-
+                
+            }
+            else if (vehicleList[spotNumber].vehicles[positionNumber].Type == "Car")
+            {
+                string type = "car";
+                bool checkSpace = CheckIfThereIsSpace(newSlot, type);
+                
+                if (checkSpace == true)
+                {
+                    var tempVehicle = vehicleList[spotNumber].vehicles[positionNumber];
+                    vehicleList[spotNumber].vehicles.RemoveAt(positionNumber);
+                    vehicleList[newSlot].vehicles.Add(tempVehicle);
+                    vehicleList[spotNumber].avaibleSize = vehicleList[spotNumber].avaibleSize + config.carSize;
+                    vehicleList[newSlot].avaibleSize = vehicleList[newSlot].avaibleSize - config.carSize;
+                    DeleteAndSaveFileVehicles();
+                }
 
             }
 
 
 
+                
+           
         }
-
-        public bool CheckIfThereIsSpace(int slotId, string type)
+       
+        public void findVehicle(string gotRegNummerFind)
         {
+            
+            var config = Configuration.LoadSettings();
+            vehicleList = Configuration.ReadVehiclesFromFile();
+            
+            for (int i = 0; i < config.sizeParkingSlots; i++)
+            {
+                
+                if(vehicleList[i].avaibleSize < config.sizeParkingSlot) // something exist in list
+                {
+                    if (vehicleList[i].vehicles[0].Type == "Car") // It mean that there cant be more vehicles in there. So it dont need to check for2. 
+                    {
+                        if (vehicleList[i].vehicles[0].RegNummer == gotRegNummerFind)
+                        {
+                            spotNumber = i;
+                            positionNumber = 0;
+                            break;
+
+                        }
+                        else
+                        {
+                            continue;
+                        }
+                    }
+                    else if (vehicleList[i].avaibleSize >= config.mcSize) // if there are 2 avaible
+                    {
+                        if (vehicleList[i].vehicles[0].RegNummer == gotRegNummerFind)
+                        {
+                            spotNumber = i;
+                            positionNumber = 0;
+
+
+                        }
+                        else
+                        {
+                            continue;
+                        }
+                    }
+                    else if (vehicleList[i].avaibleSize == 0) // if there is 0 avaible, check 1 position on list. 
+                    {
+                        if (vehicleList[i].vehicles[0].RegNummer == gotRegNummerFind)
+                        {
+                            spotNumber = i;
+                            positionNumber = 0;
+
+
+                        }
+                        else if (vehicleList[i].vehicles[1].RegNummer == gotRegNummerFind) // if there is 0 avaible, check 2nd position on list
+                        {
+                            spotNumber = i;
+                            positionNumber = 1;
+
+
+                        }
+                    }
+                  
+
+                }
+                else if(vehicleList[i].avaibleSize == config.sizeParkingSlot)
+                {
+                    continue;
+                }
+                break;
+
+                
+                
+            }
+            
+        }
+        public bool CheckIfThereIsSpace(int slotId, string type) //TODO: Get back here (Oliver code) 
+        {
+            bool answer = false;
             var config = Configuration.LoadSettings();
             vehicleList = Configuration.ReadVehiclesFromFile();
             if(type == "mc")
             {
-                vehicleList[slotId].avaibleSize >= config.mcSize;
+                int avaibleSize = vehicleList[slotId].avaibleSize;
+                int avaibleMcSize = config.mcSize;
+                if (avaibleSize >= avaibleMcSize)
+                {
+                    answer = true;
+                }      
             }
+            else if(type == "car")
             {
-
+                int avaibleSize = vehicleList[slotId].avaibleSize;
+                int avaibleCarSize = config.carSize;
+                if (avaibleSize >= avaibleCarSize)
+                {
+                    answer = true;
+                }
             }
-                
-            
-            return false;
-            
+            return answer;
+
+                          
         }
          public void DeleteAndSaveFileVehicles()
         {
