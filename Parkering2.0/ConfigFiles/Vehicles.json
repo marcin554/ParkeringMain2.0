@@ -2,16 +2,8 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 1,
-    "avaibleSize": 0,
-    "vehicles": [
-      {
-        "RegNummer": "544",
-        "Price": 10,
-        "Time": "2021-12-10T23:05:31.513347+01:00",
-        "Size": 4,
-        "Type": "Car"
-      }
-    ]
+    "avaibleSize": 4,
+    "vehicles": []
   },
   {
     "sizeSpot": 4,
@@ -133,8 +125,23 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 15,
-    "avaibleSize": 4,
-    "vehicles": []
+    "avaibleSize": 0,
+    "vehicles": [
+      {
+        "RegNummer": "984",
+        "Price": 10,
+        "Time": "2021-12-10T23:20:36.9268413+01:00",
+        "Size": 2,
+        "Type": "MC"
+      },
+      {
+        "RegNummer": "W3222",
+        "Price": 10,
+        "Time": "2021-12-11T13:46:21.1840953+01:00",
+        "Size": 2,
+        "Type": "MC"
+      }
+    ]
   },
   {
     "sizeSpot": 4,
@@ -447,16 +454,8 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 66,
-    "avaibleSize": 2,
-    "vehicles": [
-      {
-        "RegNummer": "W3222",
-        "Price": 10,
-        "Time": "2021-12-11T13:46:21.1840953+01:00",
-        "Size": 2,
-        "Type": "MC"
-      }
-    ]
+    "avaibleSize": 4,
+    "vehicles": []
   },
   {
     "sizeSpot": 4,
@@ -539,16 +538,8 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 80,
-    "avaibleSize": 2,
-    "vehicles": [
-      {
-        "RegNummer": "984",
-        "Price": 10,
-        "Time": "2021-12-10T23:20:36.9268413+01:00",
-        "Size": 2,
-        "Type": "MC"
-      }
-    ]
+    "avaibleSize": 4,
+    "vehicles": []
   },
   {
     "sizeSpot": 4,
