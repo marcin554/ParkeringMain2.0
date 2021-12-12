@@ -284,16 +284,8 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 39,
-    "avaibleSize": 0,
-    "vehicles": [
-      {
-        "RegNummer": "9877",
-        "Price": 10,
-        "Time": "2021-12-10T23:40:59.1634161+01:00",
-        "Size": 4,
-        "Type": "Car"
-      }
-    ]
+    "avaibleSize": 4,
+    "vehicles": []
   },
   {
     "sizeSpot": 4,
@@ -496,8 +488,16 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 73,
-    "avaibleSize": 4,
-    "vehicles": []
+    "avaibleSize": 0,
+    "vehicles": [
+      {
+        "RegNummer": "9877",
+        "Price": 10,
+        "Time": "2021-12-10T23:40:59.1634161+01:00",
+        "Size": 4,
+        "Type": "Car"
+      }
+    ]
   },
   {
     "sizeSpot": 4,

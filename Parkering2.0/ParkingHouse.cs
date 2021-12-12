@@ -50,7 +50,7 @@ namespace Parkering2._0
             else if (config.currentMaxTaken > config.sizeParkingSlots && falsew == true)
             {
 
-                for (int i = config.currentMaxTaken -1; i > config.sizeParkingSlots; i--)
+                for (int i = config.currentMaxTaken - 1; i > config.sizeParkingSlots - 1; i--)
                 {
 
                     vehicleList.RemoveAt(i);
@@ -64,13 +64,13 @@ namespace Parkering2._0
 
                 }
             }
-      
+
 
             void itsSaveToDelete()
             {
 
 
-                for (int i = config.sizeParkingSlots; i < config.currentMaxTaken ; i++)
+                for (int i = config.sizeParkingSlots; i < config.currentMaxTaken; i++)
                 {
                     if (vehicleList[i].avaibleSize == config.sizeParkingSlot)
                     {
@@ -88,7 +88,7 @@ namespace Parkering2._0
                 if (amount == config.currentMaxTaken - config.sizeParkingSlots)
                 {
                     falsew = true;
-                    
+
 
 
                 }
@@ -110,7 +110,7 @@ namespace Parkering2._0
 
 
 
-  
+
         }
 
         public void AddVehicle(string gotRegNummer, string mcOrCar) // Add Vehicles to existing parkingSpots
@@ -155,7 +155,7 @@ namespace Parkering2._0
 
                 }
 
-         
+
             }
         }
 
@@ -246,10 +246,10 @@ namespace Parkering2._0
 
 
         }
-    
+
         public void findVehicle(string gotRegNummerFind) // Search tool for vehicles, it goes through list, to find a regnummer that is same as the one in input.
         {
-            
+
             var config = Configuration.LoadSettings();
             vehicleList = Configuration.ReadVehiclesFromFile();
 
@@ -301,31 +301,31 @@ namespace Parkering2._0
                 }
                 else if (vehicleList[i].avaibleSize == config.sizeParkingSlot)
                 {
-                    
-                  
+
+
                     continue;
                 }
                 else
                 {
-                    
+
                     continue;
                 }
 
 
 
             }
-            
+
 
         }
 
         public int SearchVehicle(string regNr) // for user to find parking of his 
-        { 
+        {
             findVehicle(regNr);
             return spotNumber;
         }
         public bool CheckIfThereIsSpace(int slotId, string type) // Check if there is avaible space in the parkingSpot
         {
-           
+
             bool answer = false;
             var config = Configuration.LoadSettings();
             vehicleList = Configuration.ReadVehiclesFromFile();
@@ -365,7 +365,7 @@ namespace Parkering2._0
 
         }
 
-        public void countPrice(DateTime timeRegistered, string Type) 
+        public void countPrice(DateTime timeRegistered, string Type)
         {
 
             var config = Configuration.LoadSettings();

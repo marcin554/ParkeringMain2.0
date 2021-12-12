@@ -51,7 +51,7 @@ namespace Parkering2._0
                         TakeOut();
                         break;
                     case "Move Vehicle":
-
+                        Console.WriteLine("Give me your vehicle regnummer: ");
                         Move();
                         break;
                     case "Look After":
@@ -59,9 +59,9 @@ namespace Parkering2._0
                         break;
                     case "Change Settings":
                         MenuChange();
-                        
+
                         break;
-                   
+
                     default:
                         Console.WriteLine("Something went wrong");
                         break;
@@ -70,7 +70,7 @@ namespace Parkering2._0
             while (true);
 
         }
-        
+
 
         public void TakeIn1() //Sending information to parkinghouse to create new vehicle.
         {
@@ -84,8 +84,8 @@ namespace Parkering2._0
                     Console.WriteLine("Your vehicle register number: ");
 
 
-                    parking.AddVehicle(AskReg(),choice);                  
-                    
+                    parking.AddVehicle(AskReg(), choice);
+
 
 
 
@@ -101,7 +101,7 @@ namespace Parkering2._0
 
 
 
-             
+
                     break;
                 default:
                     break;
@@ -112,8 +112,8 @@ namespace Parkering2._0
         {
             Console.WriteLine("");
             parking.MoveVehicle(AskReg(), AskNewSlot());
-             
-        }  
+
+        }
         public void Search()
         {
 
@@ -122,20 +122,20 @@ namespace Parkering2._0
 
         } // Sending information to a parkinghouse, to search for position of vehicle.
         public string AskReg() //Asking for registering number
-        {             
+        {
             string vehicleReg = Console.ReadLine();
             vehicleReg = vehicleReg.ToUpper();
             return vehicleReg;
 
         }
-        
+
         public int AskNewSlot() //Asking for registering number
         {
             Console.WriteLine("Give me your new slot number: ");
-            
+
             int newSlot = int.Parse(Console.ReadLine());
             newSlot = newSlot - 1;
-            
+
             return newSlot;
         }
         public string TakeIn() //Giving choice between MC and Car
@@ -157,7 +157,7 @@ namespace Parkering2._0
             Console.WriteLine("Your vehicle register number: ");
             parking.DeleteVehicle(AskReg());
         } //Sending information to parkinghouse, and using the method to delete a vehicle.
-       
+
         public void MenuChange()
         {
             var config = Configuration.LoadSettings();
@@ -169,6 +169,7 @@ namespace Parkering2._0
                     config.sizeParkingSlots = NewValue();
                     config.SaveSettings();
                     parking.CreateParkingSpaces();
+                    CheckIfChanged();
 
                     break;
                 case "Change price of MC.":
@@ -193,10 +194,10 @@ namespace Parkering2._0
                     config.SaveSettings();
                     break;
 
-                
+
                 case "Go Back.":
 
-                    
+
                     break;
 
                 default:
@@ -204,6 +205,26 @@ namespace Parkering2._0
                     break;
             }
         } // Giving switch alternative to change different settings.
+
+        public void CheckIfChanged()
+        {
+
+
+
+            var config = Configuration.LoadSettings();
+            string menuChange = MenuChange2();
+            if (config.sizeParkingSlots < config.currentMaxTaken)
+            {
+                config.sizeParkingSlots = config.currentMaxTaken;
+                Console.WriteLine("You cant lower the number, because a place in range of that number is taken.");
+
+                config.SaveSettings();
+
+            }
+
+
+
+        }
         public string MenuChange2() // Give alternatives to user to choose. Using Spectre console. And it output the decision, so it can be used later.
         {
             string choice;
@@ -227,7 +248,7 @@ namespace Parkering2._0
             return a;
         }//Using this input into ChangeOptions
 
-       
+
 
         public void ParkingMap()
         {
