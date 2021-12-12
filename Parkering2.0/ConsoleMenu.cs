@@ -128,6 +128,7 @@ namespace Parkering2._0
             return vehicleReg;
 
         }
+        
         public int AskNewSlot() //Asking for registering number
         {
             Console.WriteLine("Give me your new slot number: ");
@@ -156,7 +157,7 @@ namespace Parkering2._0
             Console.WriteLine("Your vehicle register number: ");
             parking.DeleteVehicle(AskReg());
         } //Sending information to parkinghouse, and using the method to delete a vehicle.
-
+       
         public void MenuChange()
         {
             var config = Configuration.LoadSettings();

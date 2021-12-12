@@ -68,9 +68,9 @@
     "avaibleSize": 0,
     "vehicles": [
       {
-        "RegNummer": "AB123",
+        "RegNummer": "ABC2344",
         "Price": 20,
-        "Time": "2021-12-12T00:15:29.7491911+01:00",
+        "Time": "2021-12-12T00:58:07.4673385+01:00",
         "Size": 4,
         "Type": "Car"
       }
@@ -485,16 +485,8 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 71,
-    "avaibleSize": 2,
-    "vehicles": [
-      {
-        "RegNummer": "984",
-        "Price": 10,
-        "Time": "2021-12-10T23:20:36.9268413+01:00",
-        "Size": 2,
-        "Type": "MC"
-      }
-    ]
+    "avaibleSize": 4,
+    "vehicles": []
   },
   {
     "sizeSpot": 4,
@@ -547,8 +539,16 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 80,
-    "avaibleSize": 4,
-    "vehicles": []
+    "avaibleSize": 2,
+    "vehicles": [
+      {
+        "RegNummer": "984",
+        "Price": 10,
+        "Time": "2021-12-10T23:20:36.9268413+01:00",
+        "Size": 2,
+        "Type": "MC"
+      }
+    ]
   },
   {
     "sizeSpot": 4,
@@ -667,12 +667,6 @@
   {
     "sizeSpot": 4,
     "numberSpotId": 100,
-    "avaibleSize": 4,
-    "vehicles": []
-  },
-  {
-    "sizeSpot": 4,
-    "numberSpotId": 101,
     "avaibleSize": 4,
     "vehicles": []
   }

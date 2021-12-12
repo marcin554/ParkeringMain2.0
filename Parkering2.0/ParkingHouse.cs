@@ -70,7 +70,7 @@ namespace Parkering2._0
             {
 
 
-                for (int i = config.sizeParkingSlots; i < config.currentMaxTaken; i++)
+                for (int i = config.sizeParkingSlots; i < config.currentMaxTaken -1; i++)
                 {
                     if (vehicleList[i].avaibleSize == config.sizeParkingSlot)
                     {
